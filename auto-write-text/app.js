@@ -9,5 +9,5 @@ function autoText() {
     index = 0;
   }
 }
-
+//ms 
 setInterval(autoText, 100);
