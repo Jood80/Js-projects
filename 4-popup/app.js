@@ -1,13 +1,13 @@
-const text = "This is an auto written text";
+const open = document.getElementById("open");
 
-let index = 0;
+const close = document.getElementById("close");
 
-function autoText() {
-  document.body.innerHTML = text.slice(0, index);
-  index++;
-  if (index > text.length) {
-    index = 0;
-  }
-}
-//ms 
-setInterval(autoText, 100);
+const conatiner = document.getElementById("container");
+
+open.addEventListener("click", () => {
+  conatiner.classList.add("active");
+});
+
+close.addEventListener("click", () => {
+  conatiner.classList.remove("active");
+});
